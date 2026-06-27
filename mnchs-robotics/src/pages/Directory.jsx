@@ -74,7 +74,7 @@ export default function Directory() {
           <div className="section-head">
             <span className="eyebrow">Officer roster</span>
             <h2>Current term lineup</h2>
-            <p>Names below are placeholders — edit src/pages/Directory.jsx to add your actual officers.</p>
+            <p>Names below are the current Adviser and Officer for the S.Y. 2026 - 2O27</p>
           </div>
           <div className="grid-4">
             {OFFICERS.map((o) => (
