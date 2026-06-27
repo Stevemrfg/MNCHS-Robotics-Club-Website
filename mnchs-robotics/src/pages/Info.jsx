@@ -49,7 +49,7 @@ export default function Info() {
             doc="Sheet 02 — Mission"
             fields={[
               { label: 'Founded', value: '2018' },
-              { label: 'Adviser', value: 'To be assigned' },
+              { label: 'Adviser', value: 'Edwin A. Grander Jr.' },
               { label: 'Meets', value: 'Tue / Fri' },
               { label: 'Room', value: 'STEM 204' },
             ]}
