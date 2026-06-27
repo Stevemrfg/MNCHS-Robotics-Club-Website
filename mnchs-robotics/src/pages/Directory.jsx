@@ -7,14 +7,14 @@ import CircuitDivider from '../components/CircuitDivider.jsx'
  * the layout below to keep working.
  */
 const OFFICERS = [
-  { role: 'Club Adviser', name: 'Edwin A. Grande Jr.', meta: 'Faculty, Science Dept.', initials: 'CA' },
+  { role: 'Club Adviser', name: 'Edwin A. Grande Jr.', meta: 'Teacher, Science Dept.', initials: 'CA' },
   { role: 'President', name: 'John Steve M. Marfiga', meta: 'Grade 11 — Moonstone', initials: 'PR' },
   { role: 'Vice President', name: 'Renzi Asher D. Magbalon', meta: 'Grade 12 - Macmillan', initials: 'VP' },
-  { role: 'Secretary', name: 'Carlos Miguel Magallanes', meta: 'Grade 10', initials: 'SC' },
-  { role: 'Treasurer', name: 'Josh C. Castillo', meta: 'Grade 10', initials: 'TR' },
-  { role: 'Auditor', name: 'Eros Nino A. Timtim', meta: 'Grade 9', initials: 'AU' },
-  { role: 'Public Information Officer', name: 'Lanz Darwin Dimen', meta: 'Grade 11', initials: 'PIO' },
-  { role: 'Protocol Officer', name: 'Jeth William C. Castillo', meta: 'Grade 12', initials: 'PO' },
+  { role: 'Secretary', name: 'Carlos Miguel S. Magallanes', meta: 'Grade 11 - Moonstone', initials: 'SC' },
+  { role: 'Treasurer', name: 'Josh C. Castillo', meta: 'Grade 12 - Macmillan ', initials: 'TR' },
+  { role: 'Auditor', name: 'Eros Nino A. Timtim', meta: 'Grade 11 - Zircon', initials: 'AU' },
+  { role: 'Public Information Officer', name: 'Lanz Darwin L. Dimen', meta: 'Grade 11 - Diamond', initials: 'PIO' },
+  { role: 'Protocol Officer', name: 'Jeth William C. Castillo', meta: 'Grade 11 - Zircon', initials: 'PO' },
 ]
 
 const CONTACT_LINES = [
