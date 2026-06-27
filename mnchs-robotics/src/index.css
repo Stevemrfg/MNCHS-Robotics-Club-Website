@@ -1,0 +1,503 @@
+/* ===================================================================
+   MNCHS ROBOTICS CLUB — design system
+   Concept: an engineering / schematic drawing. Pale "blueprint paper"
+   instead of the usual dark-mode-with-neon-accent, navy ink linework,
+   copper accent like exposed circuit traces, IBM/engineering type.
+   =================================================================== */
+
+:root {
+  /* Color */
+  --paper: #EAF1F4;
+  --paper-white: #F7FAFB;
+  --paper-line: #C7D6DE;
+  --ink: #16324F;
+  --ink-soft: #3B5872;
+  --ink-deep: #0B2031;
+  --copper: #C8702A;
+  --copper-bright: #E08A3E;
+  --signal: #4F8F6B;
+  --danger: #B5482D;
+
+  /* Type */
+  --font-display: 'Space Grotesk', 'IBM Plex Sans', sans-serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  /* Layout */
+  --max-w: 1180px;
+  --grid-cell: 28px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--paper-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--paper-line) 1px, transparent 1px);
+  background-size: var(--grid-cell) var(--grid-cell);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--ink-deep);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+p { line-height: 1.6; margin: 0; }
+a { color: inherit; text-decoration: none; }
+button { font-family: var(--font-body); cursor: pointer; }
+
+:focus-visible {
+  outline: 2px solid var(--copper);
+  outline-offset: 3px;
+}
+
+.wrap {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--copper);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--copper);
+  box-shadow: 0 0 0 3px rgba(200, 112, 42, 0.18);
+}
+
+/* ---------- Navbar : PCB pin-header strip ---------- */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--paper-white);
+  border-bottom: 1px solid var(--paper-line);
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  position: relative;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.02rem;
+  color: var(--ink-deep);
+}
+
+.brand-mark { width: 30px; height: 30px; flex-shrink: 0; }
+
+.brand-text small {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  font-weight: 400;
+}
+
+.pin-nav {
+  display: flex;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pin-link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px 10px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  border-radius: 3px;
+  transition: color 0.15s ease;
+}
+
+.pin-link .pin-num {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--paper-line);
+  margin-bottom: 3px;
+  letter-spacing: 0.05em;
+}
+
+.pin-link:hover { color: var(--ink-deep); }
+.pin-link:hover .pin-num { color: var(--copper); }
+
+.pin-link.active { color: var(--ink-deep); }
+.pin-link.active .pin-num { color: var(--copper); }
+.pin-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 18%;
+  right: 18%;
+  height: 2px;
+  background: var(--copper);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--paper-line);
+  border-radius: 4px;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 760px) {
+  .pin-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--paper-white);
+    border-bottom: 1px solid var(--paper-line);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 8px;
+    display: none;
+  }
+  .pin-nav.open { display: flex; }
+  .pin-link { flex-direction: row; gap: 8px; padding: 10px 12px; }
+  .nav-toggle { display: flex; }
+}
+
+/* ---------- Title block : engineering drawing corner stamp ---------- */
+
+.title-block {
+  border: 1px solid var(--ink);
+  background: var(--paper-white);
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.title-block-main {
+  padding: 22px 26px;
+  border-right: 1px solid var(--paper-line);
+}
+
+.title-block-doc {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.title-block-fields { display: grid; grid-auto-rows: 1fr; }
+
+.title-block-field {
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--paper-line);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  min-width: 132px;
+}
+
+.title-block-field:last-child { border-bottom: none; }
+
+.title-block-field span {
+  display: block;
+  color: var(--ink-soft);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.58rem;
+  margin-bottom: 2px;
+}
+
+@media (max-width: 640px) {
+  .title-block { grid-template-columns: 1fr; }
+  .title-block-main { border-right: none; border-bottom: 1px solid var(--paper-line); }
+  .title-block-fields { grid-auto-flow: column; grid-auto-columns: 1fr; }
+  .title-block-field { border-bottom: none; border-right: 1px solid var(--paper-line); }
+  .title-block-field:last-child { border-right: none; }
+}
+
+/* ---------- Circuit-trace divider ---------- */
+
+.circuit-divider { width: 100%; height: 56px; display: block; }
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 12px 22px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  transition: transform 0.12s ease, background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn:active { transform: translateY(1px); }
+
+.btn-primary { background: var(--copper); color: var(--paper-white); }
+.btn-primary:hover { background: var(--copper-bright); }
+
+.btn-ghost { background: transparent; color: var(--ink-deep); border-color: var(--ink); }
+.btn-ghost:hover { background: var(--ink-deep); color: var(--paper-white); }
+
+/* ---------- Cards ---------- */
+
+.card {
+  background: var(--paper-white);
+  border: 1px solid var(--paper-line);
+  border-radius: 4px;
+  padding: 24px;
+  position: relative;
+}
+
+.card-num {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--copper);
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* ---------- Sections ---------- */
+
+.section { padding: 64px 0; }
+
+.section-head { margin-bottom: 36px; max-width: 640px; }
+.section-head h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); margin-top: 10px; }
+.section-head p { margin-top: 12px; color: var(--ink-soft); }
+
+/* ---------- Footer ---------- */
+
+.footer { background: var(--ink-deep); color: var(--paper); margin-top: 40px; }
+.footer .wrap { padding: 48px 24px 28px; }
+.footer a:hover { color: var(--copper-bright); }
+
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px; }
+
+.footer-mono { font-family: var(--font-mono); font-size: 0.74rem; color: #8FA9BB; line-height: 1.8; }
+
+.footer h4 {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--copper-bright);
+  margin-bottom: 14px;
+}
+
+.footer-bottom {
+  margin-top: 36px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: #6F8DA1;
+}
+
+@media (max-width: 700px) { .footer-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Forms ---------- */
+
+.field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; }
+
+.field label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.field input, .field select, .field textarea {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 11px 13px;
+  border: 1px solid var(--paper-line);
+  border-radius: 3px;
+  background: var(--paper-white);
+  color: var(--ink-deep);
+}
+
+.field input:focus, .field select:focus, .field textarea:focus {
+  outline: none;
+  border-color: var(--copper);
+  box-shadow: 0 0 0 3px rgba(200, 112, 42, 0.14);
+}
+
+.field-error { font-family: var(--font-mono); font-size: 0.7rem; color: var(--danger); }
+
+.radio-row { display: flex; gap: 14px; flex-wrap: wrap; }
+
+.radio-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 14px;
+  border: 1px solid var(--paper-line);
+  border-radius: 999px;
+  font-size: 0.86rem;
+  background: var(--paper-white);
+  cursor: pointer;
+}
+
+.radio-pill input { accent-color: var(--copper); }
+
+.success-panel {
+  border: 1px dashed var(--signal);
+  background: rgba(79, 143, 107, 0.08);
+  padding: 28px;
+  border-radius: 4px;
+}
+
+/* ---------- Stats strip ---------- */
+
+.stats-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid var(--ink);
+  background: var(--paper-white);
+}
+
+.stat { padding: 22px 18px; border-right: 1px solid var(--paper-line); text-align: center; }
+.stat:last-child { border-right: none; }
+
+.stat strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--ink-deep);
+}
+
+.stat span {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 700px) {
+  .stats-strip { grid-template-columns: repeat(2, 1fr); }
+  .stat:nth-child(2) { border-right: none; }
+}
+
+/* ---------- Page hero ---------- */
+
+.hero { padding: 56px 0 28px; }
+
+.hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; }
+
+.hero h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); line-height: 1.06; margin-top: 14px; }
+
+.hero p.lede { margin-top: 18px; font-size: 1.05rem; color: var(--ink-soft); max-width: 480px; }
+
+.hero-actions { display: flex; gap: 14px; margin-top: 28px; flex-wrap: wrap; }
+
+@media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Grid helpers ---------- */
+
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+
+@media (max-width: 860px) {
+  .grid-3 { grid-template-columns: 1fr 1fr; }
+  .grid-4 { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+}
+
+/* ---------- Directory specific ---------- */
+
+.officer-card { background: var(--paper-white); border: 1px solid var(--paper-line); border-radius: 4px; overflow: hidden; }
+
+.officer-photo {
+  height: 132px;
+  background: var(--ink-deep);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.officer-photo span {
+  font-family: var(--font-mono);
+  color: var(--copper-bright);
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+}
+
+.officer-body { padding: 16px 18px 20px; }
+
+.officer-role {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: 4px;
+}
+
+.officer-name { font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; color: var(--ink-deep); }
+
+.officer-meta { font-family: var(--font-mono); font-size: 0.74rem; color: var(--ink-soft); margin-top: 8px; }
+
+/* ---------- FAQ ---------- */
+
+.faq-item { border-bottom: 1px solid var(--paper-line); padding: 18px 0; }
+.faq-q { font-family: var(--font-display); font-weight: 600; color: var(--ink-deep); margin-bottom: 8px; }
+
+/* ---------- Page hero (secondary pages) ---------- */
+
+.page-hero { padding: 48px 0 36px; }
