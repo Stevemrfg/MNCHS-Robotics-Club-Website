@@ -45,7 +45,7 @@ export default function Directory() {
             doc="Sheet 03 — Directory"
             fields={[
               { label: 'Officers', value: String(OFFICERS.length) },
-              { label: 'Term', value: 'S.Y. 2025–2026' },
+              { label: 'Term', value: 'S.Y. 2026-2027' },
               { label: 'Room', value: 'STEM 204' },
               { label: 'Contact', value: 'See Sheet ▸' },
             ]}
