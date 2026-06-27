@@ -49,9 +49,9 @@ export default function Info() {
             doc="Sheet 02 — Mission"
             fields={[
               { label: 'Founded', value: '2018' },
-              { label: 'Adviser', value: 'Edwin A. Grander Jr.' },
+              { label: 'Adviser', value: 'Edwin A. Grande Jr.' },
               { label: 'Meets', value: 'Tue / Fri' },
-              { label: 'Room', value: 'STEM 204' },
+              { label: 'Room', value: 'DOST BUILDING' },
             ]}
           />
           <div className="card">
