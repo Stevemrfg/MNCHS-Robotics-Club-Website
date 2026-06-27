@@ -222,7 +222,7 @@ export default function Membership() {
               Submit Registration
             </button>
             <p style={{ marginTop: 12, fontSize: '0.74rem', color: 'var(--ink-soft)', fontFamily: 'var(--font-mono)' }}>
-              *Fee waivers available — ask the club adviser.
+              *Free waivers available — ask the club adviser.
             </p>
           </form>
         </div>
