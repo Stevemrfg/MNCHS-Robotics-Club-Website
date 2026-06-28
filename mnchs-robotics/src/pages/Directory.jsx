@@ -14,7 +14,7 @@ import CircuitDivider from '../components/CircuitDivider.jsx'
  * so you can fill in photos gradually without breaking the layout.
  */
 const OFFICERS = [
-  { role: 'Club Adviser', name: 'EDWIN A. GRANDE JR.', meta: 'Faculty, Science Dept.', initials: 'CA', photo: '' },
+  { role: 'Club Adviser', name: 'EDWIN A. GRANDE JR.', meta: 'Faculty, Science Dept.', initials: 'CA', photo: '/officers/CLUBADVISER.png' },
   { role: 'President', name: 'JOHN STEVE M. MARFIGA', meta: 'Grade 11 — Moonstone', initials: 'PR', photo: '/officers/PRESIDENT.png' },
   { role: 'Vice President', name: 'RENZI ASHER D. MAGBALON', meta: 'Grade 12 — Macmillan', initials: 'VP', photo: '/officers/VICEPRESIDENT.png' },
   { role: 'Secretary', name: 'CARLOS MIGUEL S. MAGALLANES', meta: 'Grade 11 - Moonstone', initials: 'SC', photo: '/officers/SECRETARY.png' },
