@@ -25,10 +25,10 @@ const OFFICERS = [
 ]
 
 const CONTACT_LINES = [
-  { label: 'Email', value: 'mnchs.robotics@example.edu.ph' },
+  { label: 'Email', value: 'mnchsroboclub@gmail.com' },
   { label: 'Facebook', value: '/MNCHSRoboticsClub' },
-  { label: 'Meeting room', value: 'STEM Building, Room 204' },
-  { label: 'Meeting time', value: 'Tuesdays & Fridays, 3:30–5:30 PM' },
+  { label: 'Meeting room', value: 'DOST Building, RM. 1' },
+  { label: 'Meeting time', value: 'TBA in Facebook page or group chat' },
 ]
 
 export default function Directory() {
