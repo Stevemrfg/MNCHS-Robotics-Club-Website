@@ -3,8 +3,8 @@ import CircuitDivider from '../components/CircuitDivider.jsx'
 
 const ACTIVITIES = [
   { num: '01', title: 'Line-following & maze bots', body: 'Sensor calibration, PID basics, and chassis tuning using Arduino-based kits.' },
-  { num: '02', title: 'Robot arms & grippers', body: 'Servo control and simple kinematics for pick-and-place tasks.' },
-  { num: '03', title: 'Competition prep', body: 'Mock runs and scrimmages ahead of regional and DOST-SEI robotics meets.' },
+  { num: '02', title: 'SumoBots', body: 'Search and attack bots, ready for competition and challenges..' },
+  { num: '03', title: 'Competition prep', body: 'Mock runs and scrimmages ahead of competitions.' },
   { num: '04', title: 'Coding workshops', body: 'Weekly sessions moving from block-based logic to C++ on the Arduino IDE.' },
 ]
 
@@ -19,11 +19,11 @@ const FAQS = [
   },
   {
     q: 'Is there a membership fee?',
-    a: 'A small per-quarter contribution helps cover shared components like sensors and batteries. Scholars may request a waiver through the club adviser.',
+    a: 'None! Membership in the club is completely free, just register and enjoy!.',
   },
   {
     q: 'When and where do you meet?',
-    a: 'Every Tuesday and Friday, 3:30–5:30 PM, at the STEM Building, Room 204. Schedules may shift slightly around exam weeks.',
+    a: 'Meetings, trainings, and competitions will be announced here and in the facebook page.',
   },
 ]
 
@@ -49,9 +49,8 @@ export default function Info() {
             doc="Sheet 02 — Mission"
             fields={[
               { label: 'Founded', value: '2018' },
-              { label: 'Adviser', value: 'To be assigned' },
-              { label: 'Meets', value: 'Tue / Fri' },
-              { label: 'Room', value: 'STEM 204' },
+              { label: 'Adviser', value: 'Edwin A. Grande Jr.' },
+              { label: 'Room', value: 'DOST Building, RM. 1' },
             ]}
           />
           <div className="card">
@@ -59,8 +58,8 @@ export default function Info() {
             <h3 style={{ fontSize: '1.15rem', marginBottom: 10 }}>Why we exist</h3>
             <p style={{ color: 'var(--ink-soft)' }}>
               We exist to give MNCHS students an accessible entry point into robotics
-              and engineering — regardless of background — and to represent Masbate
-              well in inter-school and provincial competitions.
+              and engineering, regardless of background, and to represent Masbate
+              well in inter-school and up to national competitions.
             </p>
           </div>
         </div>
