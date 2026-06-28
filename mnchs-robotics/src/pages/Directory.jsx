@@ -53,7 +53,7 @@ export default function Directory() {
             fields={[
               { label: 'Officers', value: String(OFFICERS.length) },
               { label: 'Term', value: 'S.Y. 2025–2026' },
-              { label: 'Room', value: 'STEM 204' },
+              { label: 'Room', value: 'DOST Building, RM. 1' },
               { label: 'Contact', value: 'See Sheet ▸' },
             ]}
           />
