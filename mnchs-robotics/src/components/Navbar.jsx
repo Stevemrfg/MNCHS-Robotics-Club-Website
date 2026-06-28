@@ -15,7 +15,7 @@ export default function Navbar() {
     <header className="navbar">
       <div className="navbar-inner">
         <NavLink to="/" className="brand" onClick={() => setOpen(false)}>
-          <svg className="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <img className="brand-mark" src="/public/CLUBLOGO.jpg" alt="MNCHS Robotics Club logo" />
             <rect width="32" height="32" rx="4" fill="var(--ink-deep)" />
             <rect x="10" y="10" width="12" height="12" rx="1" fill="var(--paper-white)" />
             <g stroke="var(--copper)" strokeWidth="1.5">
