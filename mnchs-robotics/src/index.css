@@ -165,8 +165,8 @@ button { font-family: var(--font-body); cursor: pointer; }
   font-size: 0.86rem;
   font-weight: 500;
   color: var(--ink-soft);
-  border-radius: 3px;
-  transition: color 0.15s ease;
+  border-radius: 6px;
+  transition: color 0.15s ease, background 0.15s ease;
 }
 
 .pin-link .pin-num {
@@ -180,17 +180,11 @@ button { font-family: var(--font-body); cursor: pointer; }
 .pin-link:hover { color: var(--ink-deep); }
 .pin-link:hover .pin-num { color: var(--copper); }
 
-.pin-link.active { color: var(--ink-deep); }
-.pin-link.active .pin-num { color: var(--copper); }
-.pin-link.active::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 18%;
-  right: 18%;
-  height: 2px;
+.pin-link.active {
   background: var(--copper);
+  color: #FFFFFF;
 }
+.pin-link.active .pin-num { color: rgba(255, 255, 255, 0.75); }
 
 .nav-toggle {
   display: none;
