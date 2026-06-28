@@ -60,9 +60,9 @@ export default function Home() {
       <section className="section">
         <div className="wrap">
           <div className="stats-strip">
-            <div className="stat"><strong>40+</strong><span>Active members</span></div>
-            <div className="stat"><strong>12</strong><span>Robots built this year</span></div>
-            <div className="stat"><strong>6</strong><span>Competitions joined</span></div>
+            <div className="stat"><strong>SOON...</strong><span>Active members</span></div>
+            <div className="stat"><strong>SOON...</strong><span>Robots built this year</span></div>
+            <div className="stat"><strong>SOON...</strong><span>Competitions joined</span></div>
             <div className="stat"><strong>2018</strong><span>Club founded</span></div>
           </div>
         </div>
