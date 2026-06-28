@@ -46,7 +46,7 @@ export default function Navbar() {
                   className={({ isActive }) => `pin-link ${isActive ? 'active' : ''}`}
                 >
                   <span className="pin-num">{link.pin}</span>
-                  {link.label}
+                  <span className="pin-label">{link.label}</span>
                 </NavLink>
               </li>
             ))}
