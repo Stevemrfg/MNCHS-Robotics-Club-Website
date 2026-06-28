@@ -15,13 +15,13 @@ import CircuitDivider from '../components/CircuitDivider.jsx'
  */
 const OFFICERS = [
   { role: 'Club Adviser', name: 'To be assigned', meta: 'Faculty, Science Dept.', initials: 'CA', photo: '' },
-  { role: 'President', name: 'Officer Name', meta: 'Grade 11 — STEM', initials: 'PR', photo: '' },
-  { role: 'Vice President', name: 'Officer Name', meta: 'Grade 11 — STEM', initials: 'VP', photo: '' },
-  { role: 'Secretary', name: 'Officer Name', meta: 'Grade 10', initials: 'SC', photo: '' },
-  { role: 'Treasurer', name: 'Officer Name', meta: 'Grade 10', initials: 'TR', photo: '' },
-  { role: 'Public Info Officer', name: 'Officer Name', meta: 'Grade 9', initials: 'PI', photo: '' },
-  { role: 'Mechanical Lead', name: 'Officer Name', meta: 'Grade 11', initials: 'ML', photo: '' },
-  { role: 'Programming Lead', name: 'Officer Name', meta: 'Grade 12', initials: 'PL', photo: '' },
+  { role: 'President', name: 'Officer Name', meta: 'Grade 11 — STEM', initials: 'PR', photo: 'PRESIDENT.png' },
+  { role: 'Vice President', name: 'Officer Name', meta: 'Grade 11 — STEM', initials: 'VP', photo: 'VICEPRESIDENT.png' },
+  { role: 'Secretary', name: 'Officer Name', meta: 'Grade 10', initials: 'SC', photo: 'SECRETARY.png' },
+  { role: 'Treasurer', name: 'Officer Name', meta: 'Grade 10', initials: 'TR', photo: 'TREASURER.png' },
+  { role: 'Auditor', name: 'Officer Name', meta: 'Grade 9', initials: 'PI', photo: 'AUDITOR.png' },
+  { role: 'Public Information Officer', name: 'Officer Name', meta: 'Grade 11', initials: 'ML', photo: 'PIO.png' },
+  { role: 'Protocol Officer', name: 'Officer Name', meta: 'Grade 12', initials: 'PL', photo: 'PO.png' },
 ]
 
 const CONTACT_LINES = [
