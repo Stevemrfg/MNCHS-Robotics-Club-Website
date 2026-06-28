@@ -153,7 +153,9 @@ button { font-family: var(--font-body); cursor: pointer; }
   gap: 4px;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 6px 8px;
+  background: var(--copper);
+  border-radius: 8px;
 }
 
 .pin-link {
@@ -164,21 +166,38 @@ button { font-family: var(--font-body); cursor: pointer; }
   padding: 6px 14px 10px;
   font-size: 0.86rem;
   font-weight: 500;
-  color: var(--ink-soft);
+  color: rgba(255, 255, 255, 0.85);
   border-radius: 6px;
-  transition: color 0.15s ease, background 0.15s ease;
+  transition: color 0.15s ease;
 }
 
 .pin-link .pin-num {
   font-family: var(--font-mono);
   font-size: 0.6rem;
-  color: var(--paper-line);
+  color: rgba(255, 255, 255, 0.55);
   margin-bottom: 3px;
   letter-spacing: 0.05em;
 }
 
-.pin-link:hover { color: var(--ink-deep); }
-.pin-link:hover .pin-num { color: var(--copper); }
+.pin-link .pin-label {
+  padding: 3px 10px;
+  border-radius: 4px;
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.pin-link:hover { color: #FFFFFF; }
+.pin-link:hover .pin-num { color: rgba(255, 255, 255, 0.85); }
+
+.pin-link:hover .pin-label,
+.pin-link:active .pin-label,
+.pin-link.active .pin-label {
+  background: #FFFFFF;
+  color: var(--copper);
+  transform: scale(1.12);
+}
+
+.pin-link.active { color: #FFFFFF; }
+.pin-link.active .pin-num { color: rgba(255, 255, 255, 0.85); }
 
 .pin-link.active {
   background: var(--copper);
@@ -204,8 +223,7 @@ button { font-family: var(--font-body); cursor: pointer; }
     top: 100%;
     left: 0;
     right: 0;
-    background: var(--paper-white);
-    border-bottom: 1px solid var(--paper-line);
+    background: var(--copper);
     flex-direction: column;
     align-items: stretch;
     padding: 8px;
