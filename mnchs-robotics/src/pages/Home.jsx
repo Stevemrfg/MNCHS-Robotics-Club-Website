@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import TitleBlock from '../components/TitleBlock.jsx'
 import CircuitDivider from '../components/CircuitDivider.jsx'
 
 const HIGHLIGHTS = [
@@ -42,15 +41,11 @@ export default function Home() {
               <Link className="btn btn-ghost" to="/info">See What We Do</Link>
             </div>
           </div>
-
-          <TitleBlock
-            doc="Sheet 01 — Home"
-            fields={[
-              { label: 'Org', value: 'MNCHS Robotics Club' },
-              { label: 'Est.', value: '2018' },
-              { label: 'Scale', value: '1 : 1' },
-              { label: 'Status', value: 'Recruiting' },
-            ]}
+          
+          <img
+            src="/hero.jpg"
+            alt="MNCHS Robotics Club members working on a robot"
+            className="hero-image"
           />
         </div>
       </section>
