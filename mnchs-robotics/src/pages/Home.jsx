@@ -43,8 +43,8 @@ export default function Home() {
           </div>
           
           <img
-            src="/hero.jpg"
-            alt="MNCHS Robotics Club members working on a robot"
+            src="/SUMOBOTCOMP.jpg"
+            alt="MNCHS Robotics Summit, CCTO of the image"
             className="hero-image"
           />
         </div>
