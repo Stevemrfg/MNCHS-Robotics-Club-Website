@@ -16,6 +16,11 @@ const initialForm = {
   reason: '',
 }
 
+// Paste the "Web app URL" you get after deploying the Apps Script
+// (see google-apps-script/sheet-submit.gs) here. Submissions go straight
+// to your Google Sheet once this is filled in.
+const SHEET_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx6dwSxHfrkFPpUi98w7zULik2sHuI8sGSIEOJb57EcsBol6Tm0AzNHxFMH7ykH6bpmvA/exec'
+
 function validate(form) {
   const errors = {}
   if (!form.fullName.trim()) errors.fullName = 'Enter your full name.'
@@ -48,10 +53,23 @@ export default function Membership() {
     const nextErrors = validate(form)
     setErrors(nextErrors)
     if (Object.keys(nextErrors).length === 0) {
+      // Send to Google Sheets via the Apps Script web app.
+      // mode: 'no-cors' is required because Apps Script doesn't send back
+      // CORS headers — this means we can't read the response, so we
+      // optimistically show the success screen. If SHEET_SCRIPT_URL hasn't
+      // been filled in yet, this fetch will simply fail quietly and the
+      // success screen still shows (matching the previous demo behavior).
+      if (SHEET_SCRIPT_URL && !SHEET_SCRIPT_URL.startsWith('PASTE_')) {
+        fetch(SHEET_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain' },
+          body: JSON.stringify(form),
+        }).catch(() => {
+          // Network errors are ignored on purpose — see note above.
+        })
+      }
       setSubmitted(true)
-      // NOTE: there is no backend wired up yet. To actually receive these
-      // submissions, send `form` to a service such as Formspree, Google
-      // Forms, or your own API endpoint here (e.g. inside a fetch() call).
     }
   }
 
@@ -230,3 +248,4 @@ export default function Membership() {
     </>
   )
 }
+
