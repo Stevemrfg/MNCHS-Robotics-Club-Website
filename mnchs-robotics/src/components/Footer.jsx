@@ -22,9 +22,9 @@ export default function Footer() {
           <div>
             <h4>Reach Us</h4>
             <p className="footer-mono">
-              mnchs.robotics@example.edu.ph<br />
+              mnchsroboclub@gmail.com<br />
               Facebook: /MNCHSRoboticsClub<br />
-              Rm. 204 — STEM Building
+              DOST Building, RM. 1
             </p>
           </div>
         </div>
