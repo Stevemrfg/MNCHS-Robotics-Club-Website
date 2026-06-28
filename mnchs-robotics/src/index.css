@@ -19,9 +19,10 @@
   --danger: #C0392B;
 
   /* Type */
-  --font-display: 'Space Grotesk', 'IBM Plex Sans', sans-serif;
-  --font-body: 'IBM Plex Sans', sans-serif;
-  --font-mono: 'IBM Plex Mono', monospace;
+/* Type */
+  --font-display: Arial, Helvetica, sans-serif;
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-mono: Arial, Helvetica, sans-serif;
 
   /* Layout */
   --max-w: 1180px;
