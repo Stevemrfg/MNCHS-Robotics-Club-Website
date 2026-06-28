@@ -30,7 +30,10 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -43,6 +46,7 @@ body {
   color: var(--ink);
   background-color: var(--paper);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -115,9 +119,17 @@ button { font-family: var(--font-body); cursor: pointer; }
   font-weight: 600;
   font-size: 1.02rem;
   color: var(--ink-deep);
+   min-width: 0;
 }
 
 .brand-mark { width: 30px; height: 30px; flex-shrink: 0; }
+
+.brand-text {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
 .brand-text small {
   display: block;
@@ -126,6 +138,13 @@ button { font-family: var(--font-body); cursor: pointer; }
   letter-spacing: 0.08em;
   color: var(--ink-soft);
   font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 420px) {
+  .brand-text small { display: none; }
 }
 
 .pin-nav {
@@ -181,6 +200,7 @@ button { font-family: var(--font-body); cursor: pointer; }
   height: 38px;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 @media (max-width: 760px) {
@@ -248,9 +268,20 @@ button { font-family: var(--font-body); cursor: pointer; }
 @media (max-width: 640px) {
   .title-block { grid-template-columns: 1fr; }
   .title-block-main { border-right: none; border-bottom: 1px solid var(--paper-line); }
-  .title-block-fields { grid-auto-flow: column; grid-auto-columns: 1fr; }
-  .title-block-field { border-bottom: none; border-right: 1px solid var(--paper-line); }
+  .title-block-fields { grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); }
+  .title-block-field {
+    border-bottom: none;
+    border-right: 1px solid var(--paper-line);
+    min-width: 0;
+    overflow: hidden;
+  }
   .title-block-field:last-child { border-right: none; }
+}
+
+@media (max-width: 460px) {
+  .title-block-fields { grid-auto-flow: row; }
+  .title-block-field { border-bottom: 1px solid var(--paper-line); border-right: none; }
+  .title-block-field:last-child { border-bottom: none; }
 }
 
 /* ---------- Circuit-trace divider ---------- */
@@ -370,6 +401,16 @@ button { font-family: var(--font-body); cursor: pointer; }
 }
 
 .field-error { font-family: var(--font-mono); font-size: 0.7rem; color: var(--danger); }
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 480px) {
+  .form-row-2 { grid-template-columns: 1fr; }
+}
 
 .radio-row { display: flex; gap: 14px; flex-wrap: wrap; }
 
