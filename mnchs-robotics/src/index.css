@@ -115,13 +115,15 @@ button { font-family: var(--font-body); cursor: pointer; }
 .brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 1.02rem;
+  font-size: 1.3rem;
   color: var(--ink-deep);
-   min-width: 0;
+  min-width: 0;
 }
+
+.brand-mark { width: 44px; height: 44px; flex-shrink: 0; }
 
 .brand-mark { width: 30px; height: 30px; flex-shrink: 0; }
 
@@ -135,8 +137,8 @@ button { font-family: var(--font-body); cursor: pointer; }
 .brand-text small {
   display: block;
   font-family: var(--font-mono);
-  font-size: 0.62rem;
-  letter-spacing: 0.08em;
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
   color: var(--ink-soft);
   font-weight: 400;
   white-space: nowrap;
