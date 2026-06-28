@@ -31,7 +31,7 @@ export default function Home() {
         <div className="wrap hero-grid">
           <div>
             <span className="eyebrow">Masbate National Comprehensive High School</span>
-            <h1>We build robots.<br />We build builders.</h1>
+            <h1>WE build robots.<br />WE build builders.</h1>
             <p className="lede">
               The MNCHS Robotics Club is where circuits, code, and curiosity meet.
               We design, wire, and program machines — then take them to compete.
