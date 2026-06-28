@@ -14,14 +14,14 @@ import CircuitDivider from '../components/CircuitDivider.jsx'
  * so you can fill in photos gradually without breaking the layout.
  */
 const OFFICERS = [
-  { role: 'Club Adviser', name: 'To be assigned', meta: 'Faculty, Science Dept.', initials: 'CA', photo: '' },
-  { role: 'President', name: 'Officer Name', meta: 'Grade 11 — STEM', initials: 'PR', photo: 'PRESIDENT.png' },
-  { role: 'Vice President', name: 'Officer Name', meta: 'Grade 11 — STEM', initials: 'VP', photo: 'VICEPRESIDENT.png' },
-  { role: 'Secretary', name: 'Officer Name', meta: 'Grade 10', initials: 'SC', photo: 'SECRETARY.png' },
-  { role: 'Treasurer', name: 'Officer Name', meta: 'Grade 10', initials: 'TR', photo: 'TREASURER.png' },
-  { role: 'Auditor', name: 'Officer Name', meta: 'Grade 9', initials: 'PI', photo: 'AUDITOR.png' },
-  { role: 'Public Information Officer', name: 'Officer Name', meta: 'Grade 11', initials: 'ML', photo: 'PIO.png' },
-  { role: 'Protocol Officer', name: 'Officer Name', meta: 'Grade 12', initials: 'PL', photo: 'PO.png' },
+  { role: 'Club Adviser', name: 'EDWIN A. GRANDE JR.', meta: 'Faculty, Science Dept.', initials: 'CA', photo: '' },
+  { role: 'President', name: 'JOHN STEVE M. MARFIGA', meta: 'Grade 11 — Moonstone', initials: 'PR', photo: '/officers/PRESIDENT.png' },
+  { role: 'Vice President', name: 'RENZI ASHER D. MAGBALON', meta: 'Grade 12 — Macmillan', initials: 'VP', photo: '/officers/VICEPRESIDENT.png' },
+  { role: 'Secretary', name: 'CARLOS MIGUEL S. MAGALLANES', meta: 'Grade 11 - Moonstone', initials: 'SC', photo: '/officers/SECRETARY.png' },
+  { role: 'Treasurer', name: 'JOSH C. CASTILLO', meta: 'Grade 12 - Macmillan', initials: 'TR', photo: '/officers/TREASURER.png' },
+  { role: 'Auditor', name: 'EROS NIÑO A. TIMTIM', meta: 'Grade 11 - Zircon', initials: 'AU', photo: '/officers/AUDITOR.png' },
+  { role: 'Public Information Officer', name: 'LANZ DARWIN L. DIMEN', meta: 'Grade 11 - Diamond', initials: 'PIO', photo: '/officers/PIO.png' },
+  { role: 'Protocol Officer', name: 'JETH WILLIAM C. CASTILLO', meta: 'Grade 11 - Zircon', initials: 'PO', photo: '/officers/PO.png' },
 ]
 
 const CONTACT_LINES = [
