@@ -16,19 +16,6 @@ export default function Navbar() {
       <div className="navbar-inner">
         <NavLink to="/" className="brand" onClick={() => setOpen(false)}>
           <img className="brand-mark" src="/public/CLUBLOGO.jpg" alt="MNCHS Robotics Club logo" />
-            <rect width="32" height="32" rx="4" fill="var(--ink-deep)" />
-            <rect x="10" y="10" width="12" height="12" rx="1" fill="var(--paper-white)" />
-            <g stroke="var(--copper)" strokeWidth="1.5">
-              <line x1="13" y1="10" x2="13" y2="5" />
-              <line x1="19" y1="10" x2="19" y2="5" />
-              <line x1="13" y1="22" x2="13" y2="27" />
-              <line x1="19" y1="22" x2="19" y2="27" />
-              <line x1="10" y1="13" x2="5" y2="13" />
-              <line x1="10" y1="19" x2="5" y2="19" />
-              <line x1="22" y1="13" x2="27" y2="13" />
-              <line x1="22" y1="19" x2="27" y2="19" />
-            </g>
-          </svg>
           <span className="brand-text">
             MNCHS Robotics
             <small>MASBATE NAT'L COMPREHENSIVE HS</small>
