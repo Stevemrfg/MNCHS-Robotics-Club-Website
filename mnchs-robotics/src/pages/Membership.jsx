@@ -118,7 +118,7 @@ export default function Membership() {
             fields={[
               { label: 'Form', value: 'New Member' },
               { label: 'Time', value: '~2 minutes' },
-              { label: 'Fee', value: 'Per quarter*' },
+              { label: 'Fee', value: 'Free membership' },
               { label: 'Status', value: 'Open' },
             ]}
           />
@@ -239,9 +239,6 @@ export default function Membership() {
             <button type="submit" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
               Submit Registration
             </button>
-            <p style={{ marginTop: 12, fontSize: '0.74rem', color: 'var(--ink-soft)', fontFamily: 'var(--font-mono)' }}>
-              *Fee waivers available — ask the club adviser.
-            </p>
           </form>
         </div>
       </section>
