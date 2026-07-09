@@ -33,11 +33,11 @@ const PROJECTS = [
 
 // Edit current values as the year progresses
 const GOALS = [
-  { label: 'Competition-ready robots', target: 3, current: 1, unit: 'robots' },
-  { label: 'Active members recruited', target: 50, current: 40, unit: 'members' },
-  { label: 'Competitions joined', target: 6, current: 2, unit: 'meets' },
-  { label: 'Workshops conducted', target: 12, current: 5, unit: 'sessions' },
-  { label: 'Build sessions completed', target: 30, current: 18, unit: 'sessions' },
+  { label: 'N/A', target: 0, current: 0, unit: 'N/A' },
+  { label: 'Active members recruited', target: 100, current: 56, unit: 'members' },
+  { label: 'N/A', target: 0, current: 0, unit: 'N/A' },
+  { label: 'N/A', target: 0, current: 0, unit: 'N/A' },
+  { label: 'N/A', target: 0, current: 0, unit: 'N/A' },
 ]
 
 const STATUS_STYLE = {
