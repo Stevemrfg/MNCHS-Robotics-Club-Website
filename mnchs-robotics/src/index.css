@@ -98,8 +98,8 @@ button { font-family: var(--font-body); cursor: pointer; }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: var(--paper-white);
-  border-bottom: 1px solid var(--paper-line);
+  background: var(--copper);
+  border-bottom: none;
 }
 
 .navbar-inner {
@@ -119,7 +119,7 @@ button { font-family: var(--font-body); cursor: pointer; }
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 1.3rem;
-  color: var(--ink-deep);
+  color: #FFFFFF;
   min-width: 0;
 }
 
@@ -139,7 +139,7 @@ button { font-family: var(--font-body); cursor: pointer; }
   font-family: var(--font-mono);
   font-size: 0.74rem;
   letter-spacing: 0.06em;
-  color: var(--ink-soft);
+  color: rgba(255, 255, 255, 0.75);
   font-weight: 400;
   white-space: nowrap;
   overflow: hidden;
