@@ -55,9 +55,9 @@ export default function Home() {
       <section className="section">
         <div className="wrap">
           <div className="stats-strip">
-            <div className="stat"><strong>SOON...</strong><span>Active members</span></div>
-            <div className="stat"><strong>SOON...</strong><span>Robots built this year</span></div>
-            <div className="stat"><strong>SOON...</strong><span>Competitions joined</span></div>
+            <div className="stat"><strong>54</strong><span>Active members</span></div>
+            <div className="stat"><strong>0</strong><span>Robots built this year</span></div>
+            <div className="stat"><strong>0</strong><span>Competitions joined</span></div>
             <div className="stat"><strong>2018</strong><span>Club founded</span></div>
           </div>
         </div>
@@ -69,7 +69,7 @@ export default function Home() {
             <span className="eyebrow">What happens here</span>
             <h2>Four ways to get your hands dirty</h2>
             <p>
-              No prior robotics experience is needed — just bring curiosity. Every member
+              No prior robotics experience is needed! just bring curiosity. Every member
               passes through these four stations on the way to their first working build.
             </p>
           </div>
@@ -92,7 +92,7 @@ export default function Home() {
           <div className="card" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 24, flexWrap: 'wrap' }}>
             <div>
               <span className="eyebrow">Recruitment is open</span>
-              <h2 style={{ marginTop: 10, fontSize: '1.5rem' }}>Sign-ups close before the first quarter ends.</h2>
+              <h2 style={{ marginTop: 10, fontSize: '1.5rem' }}>Sign-ups close before the first term ends.</h2>
               <p style={{ marginTop: 8, color: 'var(--ink-soft)', maxWidth: 460 }}>
                 Fill out the membership form and an officer will reach out about your
                 onboarding session and first build group.
