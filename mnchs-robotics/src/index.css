@@ -45,7 +45,7 @@ body {
   margin: 0;
   font-family: var(--font-body);
   color: var(--ink);
-  background: linear-gradient(180deg, #F4FAFF 0%, #212AA5 40%, #DCEAF7 100%);
+  background: linear-gradient(180deg, #F4FAFF 0%, #E9F3FC 40%, #DCEAF7 100%);
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
