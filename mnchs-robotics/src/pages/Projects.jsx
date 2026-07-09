@@ -135,7 +135,7 @@ export default function Projects() {
       <section style={{ background: 'var(--paper-line)', padding: '40px 0' }}>
         <div className="wrap">
           <div className="section-head">
-            <span className="eyebrow">S.Y. 2025–2026</span>
+            <span className="eyebrow">S.Y. 2026-2027</span>
             <h2>Club goals this year</h2>
             <p>The goals of the club</p>
           </div>
