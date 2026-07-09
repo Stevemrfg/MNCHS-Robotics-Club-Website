@@ -137,7 +137,7 @@ export default function Projects() {
           <div className="section-head">
             <span className="eyebrow">S.Y. 2025–2026</span>
             <h2>Club goals this year</h2>
-            <p>Edit the GOALS array in src/pages/Projects.jsx to update targets and progress.</p>
+            <p>The goals of the club</p>
           </div>
           <div style={{ display: 'grid', gap: 16 }}>
             {GOALS.map(g => {
