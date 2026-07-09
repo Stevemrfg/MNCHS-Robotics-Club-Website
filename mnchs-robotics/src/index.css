@@ -45,11 +45,11 @@ body {
   margin: 0;
   font-family: var(--font-body);
   color: var(--ink);
-  background-color: var(--paper);
+  background: linear-gradient(180deg, #F4FAFF 0%, #E9F3FC 40%, #DCEAF7 100%);
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
-
 h1, h2, h3, h4 {
   font-family: var(--font-display);
   color: var(--ink-deep);
