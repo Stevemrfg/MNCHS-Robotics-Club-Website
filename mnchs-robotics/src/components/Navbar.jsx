@@ -5,7 +5,8 @@ const LINKS = [
   { to: '/', label: 'Home', pin: 'P01' },
   { to: '/info', label: 'Info', pin: 'P02' },
   { to: '/directory', label: 'Directory', pin: 'P03' },
-  { to: '/membership', label: 'Join', pin: 'P04' },
+  { to: '/projects', label: 'Projects', pin: 'P04' },
+  { to: '/membership', label: 'Join', pin: 'P05' },
 ]
 
 export default function Navbar() {
