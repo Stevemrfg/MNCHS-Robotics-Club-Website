@@ -51,7 +51,7 @@ export default function Directory() {
           <div className="title-block">
   <div className="title-block-main" style={{ padding: 0 }}>
     <img
-      src="/directory-hero.jpg"
+      src="/SSTFROBOT.jpg"
       alt="MNCHS Robotics Club directory"
       style={{ width: '100%', height: '100%', minHeight: 180, objectFit: 'cover', display: 'block' }}
     />
