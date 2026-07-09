@@ -33,11 +33,11 @@ const PROJECTS = [
 
 // Edit current values as the year progresses
 const GOALS = [
-  { label: 'N/A', target: 0, current: 0, unit: 'N/A' },
+  { label: 'N/A', target: 0, current: 0, unit: '' },
   { label: 'Active members recruited', target: 100, current: 56, unit: 'members' },
-  { label: 'N/A', target: 0, current: 0, unit: 'N/A' },
-  { label: 'N/A', target: 0, current: 0, unit: 'N/A' },
-  { label: 'N/A', target: 0, current: 0, unit: 'N/A' },
+  { label: 'N/A', target: 0, current: 0, unit: '' },
+  { label: 'N/A', target: 0, current: 0, unit: '' },
+  { label: 'N/A', target: 0, current: 0, unit: '' },
 ]
 
 const STATUS_STYLE = {
