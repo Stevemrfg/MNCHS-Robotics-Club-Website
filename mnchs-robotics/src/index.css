@@ -125,7 +125,7 @@ button { font-family: var(--font-body); cursor: pointer; }
 
 .brand-mark { width: 60px; height: 60px; flex-shrink: 0; }
 
-.brand-mark { width: 30px; height: 30px; flex-shrink: 0; }
+.brand-mark { width: 60px; height: 60px; flex-shrink: 0; }
 
 .brand-text {
   min-width: 0;
