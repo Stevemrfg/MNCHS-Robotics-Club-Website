@@ -90,7 +90,7 @@ export default function Projects() {
           <div className="section-head">
             <span className="eyebrow">Current Builds</span>
             <h2>Active projects</h2>
-            <p>Edit the PROJECTS array in src/pages/Projects.jsx to add your club's actual builds.</p>
+            <p>The current projects of the club</p>
           </div>
           <div className="grid-3">
             {PROJECTS.map(p => (
