@@ -15,7 +15,7 @@ const PROJECTS = [
     id: 'PRJ-02',
     name: '1st ARAngkadaBotz RoboFest',
     category: 'Competitions',
-    status: 'In progress',
+    status: 'Planning',
     team: 'Executives',
     desc: 'The first citywide robotics competition in the City of Masbate.',
     progress: 0,
@@ -34,7 +34,7 @@ const PROJECTS = [
 // Edit current values as the year progresses
 const GOALS = [
   { label: 'N/A', target: 0, current: 0, unit: '' },
-  { label: 'Active members recruited', target: 100, current: 56, unit: 'members' },
+  { label: 'Active members recruited', target: 100, current: 54, unit: 'members' },
   { label: 'N/A', target: 0, current: 0, unit: '' },
   { label: 'N/A', target: 0, current: 0, unit: '' },
   { label: 'N/A', target: 0, current: 0, unit: '' },
