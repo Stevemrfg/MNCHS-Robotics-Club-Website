@@ -530,7 +530,7 @@ button { font-family: var(--font-body); cursor: pointer; }
 .officer-card { background: var(--paper-white); border: 1px solid var(--paper-line); border-radius: 4px; overflow: hidden; }
 
 .officer-photo {
-  height: 132px;
+  height: 230px;
   background: var(--paper-line);
   position: relative;
   display: flex;
