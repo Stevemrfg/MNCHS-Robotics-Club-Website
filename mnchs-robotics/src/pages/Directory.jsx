@@ -48,15 +48,33 @@ export default function Directory() {
 
       <section style={{ paddingTop: 0 }} className="section">
         <div className="wrap grid-2">
-          <TitleBlock
-            doc="Sheet 03 — Directory"
-            fields={[
-              { label: 'Officers', value: String(OFFICERS.length) },
-              { label: 'Term', value: 'S.Y. 2025–2026' },
-              { label: 'Room', value: 'DOST Building, RM. 1' },
-              { label: 'Contact', value: 'See Sheet ▸' },
-            ]}
-          />
+          <div className="title-block">
+  <div className="title-block-main" style={{ padding: 0 }}>
+    <img
+      src="/directory-hero.jpg"
+      alt="MNCHS Robotics Club directory"
+      style={{ width: '100%', height: '100%', minHeight: 180, objectFit: 'cover', display: 'block' }}
+    />
+  </div>
+  <div className="title-block-fields">
+    <div className="title-block-field">
+      <span>Officers</span>
+      {OFFICERS.length}
+    </div>
+    <div className="title-block-field">
+      <span>Term</span>
+      S.Y. 2025–2026
+    </div>
+    <div className="title-block-field">
+      <span>Room</span>
+      DOST Building, RM. 1
+    </div>
+    <div className="title-block-field">
+      <span>Contact</span>
+      See Sheet ▸
+    </div>
+  </div>
+</div>
           <div className="card">
             <span className="card-num">CONTACT</span>
             <h3 style={{ fontSize: '1.1rem', marginBottom: 12 }}>Reach the club</h3>
