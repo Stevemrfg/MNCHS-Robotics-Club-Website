@@ -265,7 +265,7 @@ export default function Membership() {
             Prefer a paper copy?
           </p>
           
-            href="/MNCHS-Robotics-Membership-Form.pdf"
+            href="/MEMBERSHIPFORM.pdf"
             download
             className="btn btn-ghost"
           >
