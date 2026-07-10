@@ -2,11 +2,11 @@ import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 const LINKS = [
-  { to: '/', label: 'Home', pin: 'P01' },
-  { to: '/info', label: 'Info', pin: 'P02' },
-  { to: '/directory', label: 'Directory', pin: 'P03' },
-  { to: '/projects', label: 'Projects', pin: 'P04' },
-  { to: '/membership', label: 'Join', pin: 'P05' },
+  { to: '/', label: 'Home'},
+  { to: '/info', label: 'Info'},
+  { to: '/directory', label: 'Directory'},
+  { to: '/projects', label: 'Projects'},
+  { to: '/membership', label: 'Join'},
 ]
 
 export default function Navbar() {
