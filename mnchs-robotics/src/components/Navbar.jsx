@@ -18,7 +18,7 @@ export default function Navbar() {
         <NavLink to="/" className="brand" onClick={() => setOpen(false)}>
           <img className="brand-mark" src="/CLUBLOGO.png" alt="MNCHS Robotics Club logo" />
           <span className="brand-text">
-            MNCHS Robotics
+            MNCHS Robotics Club
             <small>MASBATE NAT'L COMPREHENSIVE HS</small>
           </span>
         </NavLink>
