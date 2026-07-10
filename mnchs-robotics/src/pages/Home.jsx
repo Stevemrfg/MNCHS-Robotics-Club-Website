@@ -27,28 +27,40 @@ const HIGHLIGHTS = [
 export default function Home() {
   return (
     <>
-      <section className="hero">
-        <div className="wrap hero-grid">
-          <div>
-            <span className="eyebrow">Masbate National Comprehensive High School</span>
-            <h1>WE build robots.<br />WE build builders.</h1>
-            <p className="lede">
-              The MNCHS Robotics Club is where circuits, code, and curiosity meet.
-              We design, wire, and program machines — then take them to compete.
-            </p>
-            <div className="hero-actions">
-              <Link className="btn btn-primary" to="/membership">Join the Club</Link>
-              <Link className="btn btn-ghost" to="/info">See What We Do</Link>
-            </div>
-          </div>
-          
-          <img
-            src="/SUMOBOTCOMP.jpg"
-            alt="MNCHS Robotics Summit, CCTO of the image"
-            className="hero-image"
-          />
-        </div>
-      </section>
+<section className="hero hero-video-section">
+  <video
+    className="hero-video"
+    autoPlay
+    muted
+    loop
+    playsInline
+    poster="/SUMOBOTCOMP.jpg"
+  >
+    <source src="/0710.mp4" type="video/mp4" />
+  </video>
+  <div className="hero-overlay" />
+
+  <div className="wrap hero-grid">
+    <div>
+      <span className="eyebrow">Masbate National Comprehensive High School</span>
+      <h1>WE build robots.<br />WE build builders.</h1>
+      <p className="lede">
+        The MNCHS Robotics Club is where circuits, code, and curiosity meet.
+        We design, wire, and program machines — then take them to compete.
+      </p>
+      <div className="hero-actions">
+        <Link className="btn btn-primary" to="/membership">Join the Club</Link>
+        <Link className="btn btn-ghost" to="/info">See What We Do</Link>
+      </div>
+    </div>
+
+    <img
+      src="/SUMOBOTCOMP.jpg"
+      alt="MNCHS Robotics Summit, CCTO of the image"
+      className="hero-image"
+    />
+  </div>
+</section>
 
       <div className="wrap"><CircuitDivider /></div>
 
