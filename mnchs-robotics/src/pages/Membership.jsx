@@ -258,6 +258,21 @@ export default function Membership() {
           </form>
         </div>
       </section>
+
+      <section className="section" style={{ paddingTop: 0, textAlign: 'center' }}>
+        <div className="wrap">
+          <p style={{ color: 'var(--ink-soft)', marginBottom: 12 }}>
+            Prefer a paper copy?
+          </p>
+          
+            href="/MNCHS-Robotics-Membership-Form.pdf"
+            download
+            className="btn btn-ghost"
+          >
+            Download Physical Form (PDF)
+          </a>
+        </div>
+      </section>
     </>
   )
 }
