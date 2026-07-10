@@ -85,17 +85,9 @@ if (submitted) {
             <h2 style={{ marginTop: 10, fontSize: '1.4rem' }}>Thanks, {form.fullName.split(' ')[0]} — you're on the list.</h2>
             <p style={{ marginTop: 10, color: 'var(--ink-soft)', maxWidth: 520 }}>
               An officer will reach out via {form.email}, {form.contactNumber}, or {form.facebook} about your
-              onboarding session. Keep an eye on the club's Facebook page for the schedule.
+              membership. Keep an eye on the club's Facebook page for the schedule. <br />REMINDER: The physical membership form
+              is still required, you may get one from Sir Edwin A. Grande Jr., or download the file in the group chat.
             </p>
-            
-              href="https://m.me/j/AbYIXWexuiiy6qNa/?send_source=gc%3Acopy_invite_link_t"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary"
-              style={{ marginTop: 20, display: 'inline-flex' }}
-            >
-              Join the Group Chat
-            </a>
             <button
               className="btn btn-ghost"
               style={{ marginTop: 12 }}
