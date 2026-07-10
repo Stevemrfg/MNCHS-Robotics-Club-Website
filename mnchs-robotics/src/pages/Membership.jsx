@@ -82,7 +82,7 @@ export default function Membership() {
             <span className="eyebrow">Submitted</span>
             <h2 style={{ marginTop: 10, fontSize: '1.4rem' }}>Thanks, {form.fullName.split(' ')[0]} — you're on the list.</h2>
             <p style={{ marginTop: 10, color: 'var(--ink-soft)', maxWidth: 520 }}>
-              An officer will reach out via {form.email} or {form.contactNumber} about your
+              An officer will reach out via {form.email}, {form.contactNumber}, or {form.facebook} about your
               onboarding session. Keep an eye on the club's Facebook page for the schedule.
             </p>
             <button
