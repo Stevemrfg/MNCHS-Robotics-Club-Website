@@ -230,6 +230,7 @@ button { font-family: var(--font-body); cursor: pointer; }
     align-items: stretch;
     padding: 8px;
     display: none;
+    border-radius: 0;
   }
   .pin-nav.open { display: flex; }
   .pin-link { flex-direction: row; gap: 8px; padding: 10px 12px; }
