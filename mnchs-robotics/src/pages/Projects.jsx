@@ -20,24 +20,11 @@ const PROJECTS = [
     desc: 'The first citywide robotics competition in the City of Masbate.',
     progress: 0,
   },
-  {
-    id: 'PRJ-03',
-    name: 'SOON...',
-    category: 'SOON...',
-    status: 'SOON...',
-    team: 'SOON...',
-    desc: 'SOON...',
-    progress: 0,
-  },
 ]
 
 // Edit current values as the year progresses
 const GOALS = [
-  { label: 'N/A', target: 0, current: 0, unit: '' },
   { label: 'Active members recruited', target: 100, current: 54, unit: 'members' },
-  { label: 'N/A', target: 0, current: 0, unit: '' },
-  { label: 'N/A', target: 0, current: 0, unit: '' },
-  { label: 'N/A', target: 0, current: 0, unit: '' },
 ]
 
 const STATUS_STYLE = {
