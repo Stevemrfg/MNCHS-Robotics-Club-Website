@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import TitleBlock from '../components/TitleBlock.jsx'
 
 const GRADE_LEVELS = ['Grade 7', 'Grade 8', 'Grade 9', 'Grade 10', 'Grade 11', 'Grade 12']
 const EXPERIENCE = ['None — first time', 'Some — built a small project before', 'Experienced — joined competitions before']
@@ -113,15 +112,18 @@ export default function Membership() {
 
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="wrap grid-2">
-          <TitleBlock
-            doc="Sheet 04 — Membership"
-            fields={[
-              { label: 'Form', value: 'New Member' },
-              { label: 'Time', value: '~2 minutes' },
-              { label: 'Fee', value: 'Free membership' },
-              { label: 'Status', value: 'Open' },
-            ]}
-          />
+          <img
+  src="/REGFORM.jpg"
+  alt="Membership registration details"
+  style={{
+    width: '100%',
+    height: '100%',
+    minHeight: 400,
+    objectFit: 'cover',
+    border: '1px solid var(--paper-line)',
+    display: 'block',
+  }}
+/>
 
           <form className="card" onSubmit={handleSubmit} noValidate>
             <span className="card-num">REGISTRATION FORM</span>
