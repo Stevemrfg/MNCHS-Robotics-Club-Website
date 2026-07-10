@@ -10,6 +10,7 @@ const initialForm = {
   section: '',
   contactNumber: '',
   email: '',
+  facebook: '',
   experience: '',
   track: '',
   reason: '',
@@ -188,6 +189,17 @@ export default function Membership() {
                 {errors.email && <span className="field-error">{errors.email}</span>}
               </div>
             </div>
+
+            <div className="field">
+  <label htmlFor="facebook">Facebook account name (optional)</label>
+  <input
+    id="facebook"
+    type="text"
+    value={form.facebook}
+    onChange={update('facebook')}
+    placeholder="e.g. Juan Dela Cruz"
+  />
+</div>
 
             <div className="field">
               <label>Robotics experience</label>
