@@ -19,13 +19,14 @@ const initialForm = {
 // Paste the "Web app URL" you get after deploying the Apps Script
 // (see google-apps-script/sheet-submit.gs) here. Submissions go straight
 // to your Google Sheet once this is filled in.
-const SHEET_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx6dwSxHfrkFPpUi98w7zULik2sHuI8sGSIEOJb57EcsBol6Tm0AzNHxFMH7ykH6bpmvA/exec'
+const SHEET_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwprN3ivzn9i3CRh_JCsc-Y9e9gKKeFDp_NrNtvE5ykriZeFtRGHWqd_RU-aSpqqCmtfg/exec'
 
 function validate(form) {
   const errors = {}
   if (!form.fullName.trim()) errors.fullName = 'Enter your full name.'
   if (!form.gradeLevel) errors.gradeLevel = 'Select your grade level.'
   if (!form.section.trim()) errors.section = 'Enter your section.'
+  if (!form.facebook.trim()) errors.facebook = 'Enter your Facebook account name.'
   if (!form.contactNumber.trim()) {
     errors.contactNumber = 'Enter a contact number.'
   } else if (!/^[0-9+\s-]{7,15}$/.test(form.contactNumber.trim())) {
