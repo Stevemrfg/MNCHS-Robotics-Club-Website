@@ -13,7 +13,7 @@ const PROJECTS = [
   },
   {
     id: 'PRJ-02',
-    name: '1st ARAngkadaBotz RoboFest',
+    name: '1st ARAngkadaBotz Citywide RoboFest',
     category: 'Competitions',
     status: 'Planning',
     team: 'Executives',
