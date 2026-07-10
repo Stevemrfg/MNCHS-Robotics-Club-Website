@@ -63,7 +63,7 @@ export default function Directory() {
     </div>
     <div className="title-block-field">
       <span>Term</span>
-      S.Y. 2025–2026
+      S.Y. 2026–2027
     </div>
     <div className="title-block-field">
       <span>Room</span>
