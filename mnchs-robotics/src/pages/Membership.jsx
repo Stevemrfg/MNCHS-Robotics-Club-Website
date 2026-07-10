@@ -106,7 +106,7 @@ export default function Membership() {
     <h1 style={{ fontSize: 'clamp(1.9rem, 4vw, 2.8rem)', marginTop: 12 }}>
       Sign up for the build season
     </h1>
-    <p className="lede" style={{ marginTop: 14 }}>
+<p className="lede" style={{ marginTop: 14 }}>
       Fill in the form below — it takes about two minutes. No experience required.
     </p>
     
