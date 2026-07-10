@@ -46,7 +46,7 @@ export default function Home() {
       <h1>WE build robots.<br />WE build builders.</h1>
       <p className="lede">
         The MNCHS Robotics Club is where circuits, code, and curiosity meet.
-        We design, wire, and program machines — then take them to compete.
+        We design, wire, and program machines.<br />Your dreams come alive here.
       </p>
       <div className="hero-actions">
         <Link className="btn btn-primary" to="/membership">Join the Club</Link>
