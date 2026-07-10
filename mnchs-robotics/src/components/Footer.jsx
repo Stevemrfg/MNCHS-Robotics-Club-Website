@@ -13,10 +13,11 @@ export default function Footer() {
           <div>
             <h4>Sheet Index</h4>
             <p className="footer-mono">
-              <a href="#/">Home</a><br />
-              <a href="#/info">Club Info</a><br />
-              <a href="#/directory">Directory</a><br />
-              <a href="#/membership">Membership</a>
+              <a href="#/">HOME</a><br />
+              <a href="#/info">CLUB INFO</a><br />
+              <a href="#/directory">DIRECTORY</a><br />
+              <a href="#/projects">PROJECTS</a><br />
+              <a href="#/membership">REGISTER</a>
             </p>
           </div>
           <div>
@@ -29,7 +30,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <span>REV 2026.1 — DRAWN BY MNCHS ROBOTICS CLUB</span>
+          <span>REV 2026.1.9 — DRAWN BY MNCHS ROBOTICS CLUB</span>
           <span>© {new Date().getFullYear()} MNCHS Robotics Club</span>
         </div>
       </div>
