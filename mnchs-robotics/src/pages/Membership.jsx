@@ -84,8 +84,9 @@ export default function Membership() {
             <span className="eyebrow">Submitted</span>
             <h2 style={{ marginTop: 10, fontSize: '1.4rem' }}>Thanks, {form.fullName.split(' ')[0]} — you're on the list.</h2>
             <p style={{ marginTop: 10, color: 'var(--ink-soft)', maxWidth: 520 }}>
-              An officer will reach out via {form.email}, {form.contactNumber}, or {form.facebook} about your
-              onboarding session. Keep an eye on the club's Facebook page for the schedule.
+              An officer will reach out via {form.email}, {form.contactNumber}, or {form.facebook} about your membership. 
+              Keep an eye on the club's Facebook page for the schedule.<br />Reminder: Physical Membership Forms is still required,
+              you may get one from Sir Edwin A. Grande Jr., or download the file in the group chat.
             </p>
             <button
               className="btn btn-ghost"
