@@ -111,17 +111,8 @@ export default function Membership() {
           <p className="lede" style={{ marginTop: 14 }}>
             Fill in the form below — it takes about two minutes. No experience required.
           </p>
-          
-            href="/MNCHS-Robotics-Membership-Form.pdf"
-            download
-            className="btn btn-ghost"
-            style={{ marginTop: 20 }}
-          >
-            Download Physical Form (PDF)
-          </a>
         </div>
       </section>
-
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="wrap grid-2">
           <img
