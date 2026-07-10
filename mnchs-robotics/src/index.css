@@ -504,7 +504,7 @@ button { font-family: var(--font-body); cursor: pointer; }
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, rgba(244,250,255,0.9) 0%, rgba(233,243,252,0.85) 60%, rgba(220,234,247,0.9) 100%);
-  z-index: 1;
+  z-index: 0.6;
 }
 
 .hero-video-section .hero-grid {
