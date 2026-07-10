@@ -100,18 +100,25 @@ export default function Membership() {
 
   return (
     <>
-      <section className="page-hero">
-        <div className="wrap">
-          <span className="eyebrow">Membership Registration</span>
-          <h1 style={{ fontSize: 'clamp(1.9rem, 4vw, 2.8rem)', marginTop: 12 }}>
-            Sign up for the build season
-          </h1>
-          <p className="lede" style={{ marginTop: 14 }}>
-            Fill in the form below — it takes about two minutes. No experience required.
-          </p>
-        </div>
-      </section>
-
+<section className="page-hero">
+  <div className="wrap">
+    <span className="eyebrow">Membership Registration</span>
+    <h1 style={{ fontSize: 'clamp(1.9rem, 4vw, 2.8rem)', marginTop: 12 }}>
+      Sign up for the build season
+    </h1>
+    <p className="lede" style={{ marginTop: 14 }}>
+      Fill in the form below — it takes about two minutes. No experience required.
+    </p>
+    
+      href="/MNCHS-Robotics-Membership-Form.pdf"
+      download
+      className="btn btn-ghost"
+      style={{ marginTop: 20 }}
+    >
+      Download Physical Form (PDF)
+    </a>
+  </div>
+</section>
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="wrap grid-2">
           <img
