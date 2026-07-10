@@ -1,3 +1,5 @@
+
+
 import { useState } from 'react'
 
 const GRADE_LEVELS = ['Grade 7', 'Grade 8', 'Grade 9', 'Grade 10', 'Grade 11', 'Grade 12']
@@ -100,39 +102,40 @@ export default function Membership() {
 
   return (
     <>
-<section className="page-hero">
-  <div className="wrap">
-    <span className="eyebrow">Membership Registration</span>
-    <h1 style={{ fontSize: 'clamp(1.9rem, 4vw, 2.8rem)', marginTop: 12 }}>
-      Sign up for the build season
-    </h1>
-<p className="lede" style={{ marginTop: 14 }}>
-      Fill in the form below — it takes about two minutes. No experience required.
-    </p>
-    
-      href="/MNCHS-Robotics-Membership-Form.pdf"
-      download
-      className="btn btn-ghost"
-      style={{ marginTop: 20 }}
-    >
-      Download Physical Form (PDF)
-    </a>
-  </div>
-</section>
+      <section className="page-hero">
+        <div className="wrap">
+          <span className="eyebrow">Membership Registration</span>
+          <h1 style={{ fontSize: 'clamp(1.9rem, 4vw, 2.8rem)', marginTop: 12 }}>
+            Sign up for the build season
+          </h1>
+          <p className="lede" style={{ marginTop: 14 }}>
+            Fill in the form below — it takes about two minutes. No experience required.
+          </p>
+          
+            href="/MNCHS-Robotics-Membership-Form.pdf"
+            download
+            className="btn btn-ghost"
+            style={{ marginTop: 20 }}
+          >
+            Download Physical Form (PDF)
+          </a>
+        </div>
+      </section>
+
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="wrap grid-2">
           <img
-  src="/REGFORM.jpg"
-  alt="Membership registration details"
-  style={{
-    width: '100%',
-    height: '100%',
-    minHeight: 400,
-    objectFit: 'cover',
-    border: '1px solid var(--paper-line)',
-    display: 'block',
-  }}
-/>
+            src="/REGFORM.jpg"
+            alt="Membership registration details"
+            style={{
+              width: '100%',
+              height: '100%',
+              minHeight: 400,
+              objectFit: 'cover',
+              border: '1px solid var(--paper-line)',
+              display: 'block',
+            }}
+          />
 
           <form className="card" onSubmit={handleSubmit} noValidate>
             <span className="card-num">REGISTRATION FORM</span>
@@ -199,15 +202,15 @@ export default function Membership() {
             </div>
 
             <div className="field">
-  <label htmlFor="facebook">Facebook account name (optional)</label>
-  <input
-    id="facebook"
-    type="text"
-    value={form.facebook}
-    onChange={update('facebook')}
-    placeholder="e.g. Juan Dela Cruz"
-  />
-</div>
+              <label htmlFor="facebook">Facebook account name (optional)</label>
+              <input
+                id="facebook"
+                type="text"
+                value={form.facebook}
+                onChange={update('facebook')}
+                placeholder="e.g. Juan Dela Cruz"
+              />
+            </div>
 
             <div className="field">
               <label>Robotics experience</label>
@@ -267,4 +270,3 @@ export default function Membership() {
     </>
   )
 }
-
