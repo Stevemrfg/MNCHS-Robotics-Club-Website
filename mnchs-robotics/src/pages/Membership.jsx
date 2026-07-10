@@ -88,6 +88,15 @@ export default function Membership() {
               Keep an eye on the club's Facebook page for the schedule.<br />Reminder: Physical Membership Forms is still required,
               you may get one from Sir Edwin A. Grande Jr., or download the file in the group chat.
             </p>
+            
+              href="https://m.me/j/AbYIXWexuiiy6qNa/?send_source=gc%3Acopy_invite_link_t"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+              style={{ marginTop: 20, display: 'inline-flex' }}
+            >
+              Join the Group Chat
+            </a>
             <button
               className="btn btn-ghost"
               style={{ marginTop: 20 }}
