@@ -252,25 +252,10 @@ export default function Membership() {
               />
             </div>
 
-            <button type="submit" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
+              <button type="submit" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
               Submit Registration
             </button>
           </form>
-        </div>
-      </section>
-
-      <section className="section" style={{ paddingTop: 0, textAlign: 'center' }}>
-        <div className="wrap">
-          <p style={{ color: 'var(--ink-soft)', marginBottom: 12 }}>
-            Prefer a paper copy?
-          </p>
-          
-            href="/MEMBERSHIPFORM.pdf"
-            download
-            className="btn btn-ghost"
-          >
-            Download Physical Form (PDF)
-          </a>
         </div>
       </section>
     </>
