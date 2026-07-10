@@ -76,7 +76,7 @@ export default function Membership() {
     }
   }
 
-  if (submitted) {
+if (submitted) {
     return (
       <section className="section">
         <div className="wrap">
@@ -84,9 +84,8 @@ export default function Membership() {
             <span className="eyebrow">Submitted</span>
             <h2 style={{ marginTop: 10, fontSize: '1.4rem' }}>Thanks, {form.fullName.split(' ')[0]} — you're on the list.</h2>
             <p style={{ marginTop: 10, color: 'var(--ink-soft)', maxWidth: 520 }}>
-              An officer will reach out via {form.email}, {form.contactNumber}, or {form.facebook} about your membership. 
-              Keep an eye on the club's Facebook page for the schedule.<br />Reminder: Physical Membership Forms is still required,
-              you may get one from Sir Edwin A. Grande Jr., or download the file in the group chat.
+              An officer will reach out via {form.email}, {form.contactNumber}, or {form.facebook} about your
+              onboarding session. Keep an eye on the club's Facebook page for the schedule.
             </p>
             
               href="https://m.me/j/AbYIXWexuiiy6qNa/?send_source=gc%3Acopy_invite_link_t"
@@ -99,7 +98,7 @@ export default function Membership() {
             </a>
             <button
               className="btn btn-ghost"
-              style={{ marginTop: 20 }}
+              style={{ marginTop: 12 }}
               onClick={() => { setForm(initialForm); setSubmitted(false) }}
             >
               Register another member
